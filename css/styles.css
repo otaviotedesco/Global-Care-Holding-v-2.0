@@ -8,48 +8,87 @@ body, html {
 
 
 #container {
-    background-color: black;
-    width: 100%;
-    padding-left: 0;
-    padding-right: 0;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 500px;
+   
+}
+
+#container2{
+  margin-top: 30px;
 }
 
 .text-container h3 {
-  
+    
     font-size: 2em;
     font-weight: bold;
     padding: 20px;
     margin-left: 150px; 
+    color: white;
 }
 
 .text-container p {
     padding: 20px;
     font-size: 2em;
-    font-family: 'Edu TAS Beginner', cursive;
+    color: white;
+
 }
 
 .text-container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: black;
     color: #525864;
     margin-top: 50px;
 }
 
-.first-container{
+.first-container {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
 
+.first-container h3 {
+ 
+  height: fit-content;
+  width: 100%; 
+  margin-bottom: 30px; 
+  padding: 30px; 
+}
+
+.first-container p {
+  
+  height: fit-content;
+  text-align: justify;
 }
 
 
+
+.carousel-item img {
+    height: 500px; 
+    object-fit: cover; 
+  }
+
+  
+  #mainSlider {
+    max-height: 600px; 
+    margin: auto; 
+   
+  }
+
 /*----------------CARD-----------------*/
 .second-container {
-    background-color: #437312;
+    background-color: rgba(243, 243, 243, 0.99);
     height: 500px;
     display: flex;
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 10px;
+    margin-top: 10px;
   }
   
   .card {
@@ -64,23 +103,17 @@ body, html {
     justify-content: space-between; 
   }
 
-.third-container {
-    background-color: #437312;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    height: 350px;
-    overflow: hidden; 
-}
-    
+
+  
 
 
 .text-third-container {
-    background-color: #3a5a40;
-    margin: 10px;
-    padding: 20px;
+   
     text-align: center;
-    width: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  
 }
 
 .img-third-container img {
@@ -90,12 +123,29 @@ body, html {
     height: auto;
     display: block;
     margin: auto;
+    padding: 10px;
+  }
+
+  .box1{
+
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    display: block;
+    margin: auto;
+    background-color: #525864;
   }
 
 
+#terceiro{
+    background-color: transparent;
+    padding: 15px;
+    margin-top: 15px    ;
+}
 
 .fourth-container {
-    background-color: rgb(46, 42, 45);
+    background-color: transparent;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -122,7 +172,7 @@ body, html {
 
 
 .fifth-container {
-    background-color: rgb(116, 140, 116);
+    background-color:transparent;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -148,4 +198,13 @@ body, html {
 }
 
 
-
+.accordion {
+    background-color: rgba(255, 255, 255, 0.8) !important;
+    border: 1px solid rgba(0, 0, 0, 0.1) !important;
+    border-radius: 8px !important;
+  }
+  
+  .accordion-body {
+    background-color: rgba(255, 255, 255, 0.9) !important;
+    border-top: 1px solid rgba(0, 0, 0, 0.1) !important;
+  }
