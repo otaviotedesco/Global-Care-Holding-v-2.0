@@ -19,7 +19,7 @@ body, html {
   margin-top: 30px;
 }
 
-.text-container h3 {
+.video-text h3 {
     
     font-size: 2em;
     font-weight: bold;
@@ -28,14 +28,14 @@ body, html {
     color: white;
 }
 
-.text-container p {
+.video-text p {
     padding: 20px;
     font-size: 2em;
     color: white;
 
 }
 
-.text-container {
+.video-text {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -81,7 +81,7 @@ body, html {
 
 /*----------------CARD-----------------*/
 .second-container {
-    background-color: rgba(243, 243, 243, 0.99);
+    background-color: rgba(243, 243, 243, 0.763);
     height: 500px;
     display: flex;
     align-items: center;
@@ -104,7 +104,14 @@ body, html {
   }
 
 
-  
+.card:hover{
+
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  height: 95%;
+  transition: all 0.2s ease;
+}
 
 
 .text-third-container {
@@ -139,10 +146,30 @@ body, html {
 
 
 #terceiro{
-    background-color: transparent;
+  background-color: rgba(243, 243, 243, 0.815);
     padding: 15px;
     margin-top: 15px    ;
 }
+
+
+
+
+
+
+.imagens {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.imagens img {
+  max-width: 30%; /* Reduz o tamanho das imagens para aproximadamente 50% */
+  height: auto;
+  margin: 10px;
+}
+
+
+
 
 .fourth-container {
     background-color: transparent;
@@ -208,3 +235,269 @@ body, html {
     background-color: rgba(255, 255, 255, 0.9) !important;
     border-top: 1px solid rgba(0, 0, 0, 0.1) !important;
   }
+
+
+
+/*-------------------------------SEXTO CONTAINER---------------------/*
+
+/* SEXTO CONTAINER - PROJETOS EM DESTAQUE */
+
+.sixth-container {
+  background-color: #f8f9fa; /* Cor de fundo */
+  padding: 30px;
+}
+
+.text-sixth-container {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.img-sixth-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.project-card {
+  background-color: white; /* Cor do fundo do card */
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px; /* Largura do card */
+}
+
+.project-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.project-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  font-size: 1rem;
+  text-align: justify;
+}
+
+/* SÉTIMO CONTAINER - PARCEIROS */
+
+.seventh-container {
+  background-color: #f8f9fa; /* Cor de fundo */
+  padding: 30px;
+}
+
+.text-seventh-container {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.img-seventh-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.img-seventh-container img {
+  max-width: 100px; /* Ajuste o tamanho da logo conforme necessário */
+  height: auto;
+  margin: 10px;
+}
+
+
+
+
+
+
+
+
+
+  /*----------------------------FOOTER-----------------------*/
+
+#area-contatos {
+  text-align: center;
+}
+
+.caixa-contatos {
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid rgb(213, 100, 62);
+}
+
+.caixa-contatos i {
+  color: #d73434;
+  border: solid 1px #ce3232;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.caixa-contatos p {
+  font-size: 16px;
+}
+
+.contact-tile {
+  font-weight: bold;
+  color: #d57a3e;
+}
+
+#caixa-msg p {
+  font-size: 22px;
+  margin-left: 50px;
+  
+}
+#defaultCheck1{
+  margin-left: 20px;
+  margin-top: 15px;
+}
+#defaultCheck2{
+  margin-left: 50px;
+  margin-top: 9px;
+}
+
+#final {
+  background-color: #F1F1F1;
+}
+
+#final .container {
+  padding: 10px 0;
+  text-align: center;
+}
+
+#final .container p {
+  margin-bottom: 0;
+}
+
+footer{
+  color: black;
+  font-weight: bold;
+  background-color: #bbbbc6;
+}
+
+/*----------------------FORM------------------------------*/
+.form-group label {
+  color: #dfe0ef;
+  color: rgb(236, 207, 207);
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 2px;
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+.form-control{
+  background-color: #ebddd4;
+  border: #e5d6cc;
+  border-radius: 15px; 
+}
+
+#forms-contato{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  
+}
+#forms-contato form {
+  border-radius: 55px; 
+  width: 100%;
+  margin-top: 20px;
+  padding: 15px;
+}
+
+#formulario-contato{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+ 
+}
+
+#forms-contato input[type="checkbox"]{
+  
+  border-radius: 15px;
+  padding: 10px;
+}
+
+#forms-contato input[type="text"], #forms-contato textarea {
+  
+  border-radius: 15px;
+  padding: 10px;
+}
+
+#forms-contato .main-btn {
+  width: 120px;
+  height: 40px;
+}
+
+.nome-form{
+  padding: 10px;
+}
+.email-form{
+  padding: 10px;
+}
+
+.assunto-form{
+  padding: 10px;
+}
+
+/*---------------------------BUTTONS---------------------*/
+
+.btn-primary {
+  background-color: #d73434;
+  margin-left: 25%;
+  border: none;
+  transition: transform 0.2s, box-shadow 0.2s;
+  width: 100px;
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 2px;
+}
+
+.btn-primary:hover{
+  size: 110%;
+  transform: scale(1.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #d73434;
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 3px;
+
+}
+
+#button-send{
+  margin-left: 120px;
+  margin-top: 10px;
+  background-color: #ce3232;
+  border: none;
+  border-radius: 15px;
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 3px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+#dropdownMenuButton{
+  color: #e8d5d5;
+  background-color: transparent;
+  border: none;
+  font-family: 'Bebas Neue', sans-serif;
+ font-size: 1.3rem;
+ letter-spacing: 3px;
+}
+
+.dropdown #dropdownMenuButton2{
+  color: black;
+  background-color: #ce3232;
+  border: none;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.0rem;
+ letter-spacing: 2px;
+ margin-right: 20px;
+}
+
+#button-send:hover{
+  size: 110%;
+  transform: scale(1.2);
+}
