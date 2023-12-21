@@ -241,7 +241,6 @@ header,
 
 #terceiro img {
   margin-right: 10px;
-  /* Adiciona espaço à direita da imagem */
   max-width: 35%;
   height: auto;
   display: flex;
@@ -250,7 +249,6 @@ header,
 #terceiro h3,
 #terceiro h4 {
   margin: 0;
-  /* Remove as margens padrão dos elementos h3 e h4 */
 }
 
 
@@ -339,7 +337,6 @@ header,
 
 .sixth-container {
   background-color: #f8f9fa;
-  /* Cor de fundo */
   padding: 30px;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -358,12 +355,10 @@ header,
 
 .project-card {
   background-color: white;
-  /* Cor do fundo do card */
   padding: 20px;
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 300px;
-  /* Largura do card */
 }
 
 .project-card img {
@@ -387,7 +382,6 @@ header,
 
 .seventh-container {
   background-color: #f8f9fa;
-  /* Cor de fundo */
   padding: 30px;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -406,7 +400,7 @@ header,
 
 .img-seventh-container img {
   max-width: 100px;
-  /* Ajuste o tamanho da logo conforme necessário */
+
   height: auto;
   margin: 10px;
 }
