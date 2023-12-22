@@ -4,6 +4,7 @@
 body,html {
   margin-left: 25px;
   margin-right: 25px;  
+  background-size: contain;
 }
 
 
@@ -142,17 +143,43 @@ header,
 video{
   border-radius: 15px;
 
-}
-
-X{
 
 }
+
+
+
+.video-overlay {
+  position: relative;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 18%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  color: #222;
+}
+
+
+.text-overlay h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.text-overlay p {
+  font-size: 1.2em;
+}
+
+
+
 
 /*-------SEGUNDO CONTAINER-CARDS----------------*/
 
 
 .second-container {
-  background-color: rgba(243, 243, 243, 0.763);
+  background-color: rgba(243, 243, 243, 0.593);
   height: 500px;
   display: flex;
   align-items: center;
@@ -263,6 +290,10 @@ X{
   border-radius: 40px;
 }
 
+h6{
+  text-align: justify;
+}
+
 
 
 /*------------- QUINTO CONTAINER - MISSÃO E VISÃO----------------*/
@@ -281,7 +312,7 @@ X{
   padding: 20px;
   text-align: center;
   width: 500px;
-  color: #dfe0ef;
+  color: #282829;
 }
 
 
@@ -346,7 +377,7 @@ X{
 
 .seventh-container {
   background-color: #f8f9fa;
-  padding: 30px;
+  padding: 25px;
   margin-top: 10px;
   margin-bottom: 10px;
   border-radius: 30px;
@@ -354,7 +385,7 @@ X{
 
 .text-seventh-container {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .img-seventh-container {
@@ -364,12 +395,17 @@ X{
 }
 
 .img-seventh-container img {
-  max-width: 100px;
-
+  max-width: 200px;
   height: auto;
   margin: 10px;
 }
 
+.img-seventh-container img:hover {
+  transform: scale(1.1); 
+  cursor: pointer;
+  transition: all 0.2s ease;
+ 
+}
 
 /*------------- OITAVO CONTAINER - EVENTOS ----------------*/
 
@@ -510,6 +546,12 @@ footer{
   margin-left: 50px;
 
 }
+#caixa-msg  {
+ 
+  margin-left: auto;
+  margin-right: auto;
+
+}
 
 #defaultCheck1 {
   margin-left: 20px;
@@ -537,7 +579,7 @@ footer{
 footer {
   color: black;
   font-weight: bold;
-  background-color: #bbbbc6;
+  background-color: rgba(187, 187, 198, 0.737);
 }
 
 /*----------------------FORM------------------------------*/
@@ -561,6 +603,8 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #forms-contato form {
@@ -660,3 +704,6 @@ footer {
   size: 110%;
   transform: scale(1.2);
 }
+
+
+
