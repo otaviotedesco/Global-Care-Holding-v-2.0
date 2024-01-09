@@ -3,7 +3,7 @@
 
 body,html {
   margin-left: 25px;
-  margin-right: 25px;  
+  margin-right: 25px;   
   background-size: contain;
 }
 
@@ -11,9 +11,10 @@ body,html {
 header,
 .navbar {
   background-color: rgba(233, 230, 230, 0.663);
-  margin-left: 25px;
-  margin-right: 25px; 
-  border-radius: 30px;
+  margin-left: auto;
+  margin-right: auto; 
+  border-radius: 25px;
+  max-width: 88%;
 }
 
 #nav-container {
@@ -79,53 +80,30 @@ header,
 }
 
 
-/*-----------BANNER ---------*/
+/*--------------CAROUSEL----------------*/
 
-
-#container-foto-inicio {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 500px; 
-}
-
-
-
-
-/*-------PRIMEIRO CONTAINER - INTRO----------*/
-
-.container{
-  border-radius: 20px;
-  background-color: rgba(190, 205, 219, 0);
-  width: 10%;
-}
-
-.first-container {
+.carousel-item img {
   height: 500px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  margin-bottom: 10px;
-  border: 1px;
-  border-radius: 10px;
+  object-fit: cover;
+  border-radius: 50px;
+  margin-top: 70px;
+}
+
+#mainSlider {
+  max-height: 600px;
+  margin: auto;
  
 }
 
-.first-container h3 {
-  height: fit-content;
-  width: 100%;
-  margin-bottom: 30px;  
-  padding: 30px;
-  color: wheat;
-  font-weight: bold;
+.h2-banner {
+
+  color: #060705;
+  align-self: center;
 }
 
-.first-container p {
-  height: fit-content;
-  text-align: justify;
-  color: wheat;
-  font-size: large;
- 
+.h2-banner2 {
+
+  color: #f3f4f3;
 }
 
 #container-video {
@@ -141,12 +119,12 @@ header,
 }
 
 video{
-  border-radius: 15px;
-
+  height: 500px;
+  object-fit: cover;
+  margin-top: 20px;
+  border-radius: 20px;
 
 }
-
-
 
 .video-overlay {
   position: relative;
@@ -154,14 +132,15 @@ video{
 
 .text-overlay {
   position: absolute;
-  top: 18%;
-  left: 50%;
+  top: 40%;
+  left: 72%;
   transform: translate(-50%, -50%);
   color: #fff;
   text-align: center;
-  color: #222;
+  color: #f0e9e9;
+  font-size: 22px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-
 
 .text-overlay h1 {
   font-size: 2em;
@@ -173,23 +152,117 @@ video{
 }
 
 
+/*--------------SEGUNDO CONTAINER - MISSÃO E VISÃO---------------*/
+.container-segundo {
+  background-color: rgba(255, 254, 254, 0);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 350px;
+  margin-top: 10px;
+  margin-bottom: 65px;
+}
+
+.text-container-segundo {
+  background-color: rgba(28, 28, 28, 0);
+  
+  padding: 20px;
+  text-align: center;
+  width: 500px;
+  color: #282829;
+  margin-top:25px
+}
+
+/*-------- TERCEIRO CONTAINER - SERVIÇOS----------------*/
 
 
-/*-------SEGUNDO CONTAINER-CARDS----------------*/
+#container-terceiro .col-md-6 {
+  display: flex;
+  
+  background-color: rgba(255, 255, 255, 0);
+  padding: 15px;
+  margin-top: 0px;
+  border-radius: 35px;
+  justify-content: space-between;
+  width: 250px;
+}
+
+.container-terceiro  {
+  display: flex;
+  align-items: center;
+  background-color: rgba(194, 20, 20, 0);
+  padding: 15px;
+  margin-top: 0px;
+  border-radius: 35px;
+ margin-right: 220;
+ margin-bottom: 10px;
+ 
+
+}
+
+#container-terceiro img {
+  margin-right: 10px;
+  max-width: 35%;
+  height: auto;
+  display: flex;
+}
+
+#container-terceiro h3,
+#container-terceiro h4 {
+  margin: 0;
+}
+
+.caixa1{
+  display: flex;
+  align-items: center;
+  background-color: rgba(243, 243, 243, 0.815);
+  padding: 10px;
+  border-radius: 45px; 
+
+}
+
+.caixa2{
+  text-align: center;
+  background-color: rgba(243, 243, 243, 0.534);
+  padding: 10px;
+  border-radius: 45px; 
+  height: 200px;
+}
+
+.caixa1:hover{
+  transform: scale(1.1); 
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border-radius: 40px;
+}
+
+h6{
+  text-align: justify;
+}
 
 
-.second-container {
-  background-color: rgba(243, 243, 243, 0.593);
+/*------------QUARTO CONTAINER-CARDS----------------*/
+
+
+.container-quarto {
+  background-color: rgba(243, 243, 243, 0);
   height: 500px;
   display: flex;
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
   margin-bottom: 10px;
-  margin-top: 10px;
+  margin-top: 70px;
   border-radius: 50px;
+  color: wheat;
 }
 
+.container-quarto h1 {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 400;
+  font-size: 4rem;
+  color:#232020;
+}
 .card img{
   border-radius: 50px;
 }
@@ -221,105 +294,10 @@ video{
 }
 
 
-/*------TERCEIRO CONTAINER-CAROUSEL----------------*/
 
-.carousel-item img {
-  height: 500px;
-  object-fit: cover;
-  border-radius: 50px;
-}
+/*------------- QUINTO CONTAINER - PROJETOS EM DESTAQUE----------------*/
 
-
-#mainSlider {
-  max-height: 600px;
-  margin: auto;
-}
-
-.h2-banner {
-
-  color: #060705;
-  align-self: center;
-}
-
-.h2-banner2 {
-
-  color: #f3f4f3;
-}
-
-
-
-/*-------- QUARTO CONTAINER - SERVIÇOS----------------*/
-
-
-
-#fourth-container .col-md-4 {
-  display: flex;
-  align-items: center;
-  background-color: rgba(59, 56, 56, 0);
-  padding: 15px;
-  margin-top: 15px;
-  border-radius: 35px;
-}
-
-#fourth-container img {
-  margin-right: 10px;
-  max-width: 35%;
-  height: auto;
-  display: flex;
-}
-
-#fourth-container h3,
-#fourth-container h4 {
-  margin: 0;
-}
-
-
-.caixa1{
-  display: flex;
-  align-items: center;
-  background-color: rgba(243, 243, 243, 0.815);
-  padding: 10px;
-  border-radius: 45px;
-
-}
-
-.caixa1:hover{
-  transform: scale(1.1); 
-  cursor: pointer;
-  transition: all 0.2s ease;
-  border-radius: 40px;
-}
-
-h6{
-  text-align: justify;
-}
-
-
-
-/*------------- QUINTO CONTAINER - MISSÃO E VISÃO----------------*/
-.fifth-container {
-  background-color: transparent;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  height: 350px;
-  margin-top: 10px;
-}
-
-.text-fifth-container {
-  background-color: rgba(255, 255, 255, 0);
-  margin: 10px;
-  padding: 20px;
-  text-align: center;
-  width: 500px;
-  color: #282829;
-}
-
-
-
-/*------------- SEXTO CONTAINER - PROJETOS EM DESTAQUE----------------*/
-
-.sixth-container {
+.quinto-container {
   background-color: #f8f9fa95;
   padding: 30px;
   margin-top: 10px;
@@ -327,12 +305,12 @@ h6{
   border-radius: 30px;
 }
 
-.text-sixth-container {
+.text-quinto-container {
   text-align: center;
   margin-bottom: 30px;
 }
 
-.img-sixth-container {
+.img-quinto-container {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -352,8 +330,6 @@ h6{
   cursor: pointer;
   transition: all 0.2s ease;
   
-
- 
 }
 
 .project-card img {
@@ -518,12 +494,12 @@ footer{
 .caixa-contatos {
   padding-bottom: 30px;
   margin-bottom: 30px;
-  border-bottom: 1px solid rgb(213, 100, 62);
+  border-bottom: 1px solid rgb(83, 89, 211);
 }
 
 .caixa-contatos i {
-  color: #d73434;
-  border: solid 1px #ce3232;
+  color: #4158da;
+  border: solid 1px #4856d8;
   border-radius: 50%;
   width: 55px;
   height: 55px;
@@ -538,7 +514,7 @@ footer{
 
 .contact-tile {
   font-weight: bold;
-  color: #d57a3e;
+  color: #345acd;
 }
 
 #caixa-msg p {
@@ -651,7 +627,7 @@ footer {
 /*---------------------------BUTTONS---------------------*/
 
 .btn-primary {
-  background-color: #d73434;
+  background-color: #3f6ed3;
   margin-left: 25%;
   border: none;
   transition: transform 0.2s, box-shadow 0.2s;
@@ -664,7 +640,7 @@ footer {
   size: 110%;
   transform: scale(1.2);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  background-color: #d73434;
+  background-color: #4a7ccc;
   font-family: 'Bebas Neue', sans-serif;
   letter-spacing: 3px;
 
@@ -673,7 +649,7 @@ footer {
 #button-send {
   margin-left: 120px;
   margin-top: 10px;
-  background-color: #ce3232;
+  background-color: #316dce;
   border: none;
   border-radius: 15px;
   font-family: 'Bebas Neue', sans-serif;
