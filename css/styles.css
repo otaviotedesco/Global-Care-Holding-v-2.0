@@ -5,6 +5,7 @@ body,html {
   margin-left: 25px;
   margin-right: 25px;   
   background-size: contain;
+  font: Arial;
 }
 
 
@@ -58,7 +59,8 @@ header,
 }
 /*-------BOTÕES NAVBAR----------*/
 .dropdown-menu {
-  background-color: #232020;
+  background-color: #633838e8;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .dropdown-menu a {
@@ -240,6 +242,7 @@ h6{
   text-align: justify;
 }
 
+h3{ font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
 
 /*------------QUARTO CONTAINER-CARDS----------------*/
 
@@ -267,12 +270,6 @@ h6{
   border-radius: 50px;
 }
 
-.card {
-  margin: 0 15px;
-  height: 300px;
-  
-  
-}
 
 .card-body {
 
@@ -280,7 +277,18 @@ h6{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  
  
+}
+
+
+
+.card {
+  margin: 0 15px;
+  height: 300px;
+  transition: all 0.2s ease; /* Mudei a transição para se aplicar a todas as propriedades */
+  border-radius: 50px;
+  
 }
 
 .card:hover {
@@ -288,10 +296,23 @@ h6{
   border: 2px solid #72c939;
   box-shadow: 0 5px 9px rgba(0, 0, 0, 0.2);
   cursor: pointer;
-  transition: all 0.2s ease;
   border-radius: 50px;
- 
 }
+
+.card:hover .card-text {
+  opacity: 1;
+}
+
+.card-text {
+  text-align: justify;
+  margin-top: 10px;
+  font-size: 16px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+
 
 
 
