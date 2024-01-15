@@ -277,7 +277,8 @@ h3{ font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  
+  background-color: #e4e4e3bd;
+  border-radius: 50px;
  
 }
 
@@ -286,8 +287,9 @@ h3{ font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
 .card {
   margin: 0 15px;
   height: 300px;
-  transition: all 0.2s ease; /* Mudei a transição para se aplicar a todas as propriedades */
+  transition: all 0.2s ease; 
   border-radius: 50px;
+  
   
 }
 
@@ -297,10 +299,12 @@ h3{ font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
   box-shadow: 0 5px 9px rgba(0, 0, 0, 0.2);
   cursor: pointer;
   border-radius: 50px;
+ 
 }
 
 .card:hover .card-text {
   opacity: 1;
+ 
 }
 
 .card-text {
@@ -310,6 +314,7 @@ h3{ font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   opacity: 0;
   transition: opacity 0.3s ease;
+ 
 }
 
 
@@ -441,6 +446,15 @@ h3{ font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
+}
+
+.descricao-evento {
+  text-align: justify;
+}
+
+.data-eventos{
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 1.2rem;
 }
 
 /*------------- NONO CONTAINER - DEPOIMENTOS ----------------*/
